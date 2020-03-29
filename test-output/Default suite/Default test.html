@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 26 17:07:58 IST 2020</td>
+<td>Started on:</td><td>Sun Mar 29 21:35:11 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>102 seconds (102125 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74382 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TESTS.Test_Jpet.Register_login()'><b>Register_login</b><br>Test class: TESTS.Test_Jpet<br>Parameters: giribabuv, babuyadav, babuyadav, giribabu, yadav, giribabuv@gmail.com, "7894563214", kondepalli, nellepalli, chittoor, andhra pradesh, "517198", india, giri, babuyadav</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div[2]/div/a[2]&quot;}
-  (Session info: chrome=80.0.3987.149)
+<td title='TESTS.Test_Jpet.search_secenario()'><b>search_secenario</b><br>Test class: TESTS.Test_Jpet</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@id=&apos;Catalog&apos;][1]//child::a[@href=&apos;/catalog/products/FI-SW-01&apos;][1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-HGGEC2PE&apos;, ip: &apos;192.168.43.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\VDDEE~1.GIR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49644}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1bebbbb87dc1c0c175d867efdba4afaa
-*** Element info: {Using=xpath, value=/html/body/div[1]/div[2]/div/a[2]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PAGES.Login_page.sign(Login_page.java:22)
-	at PAGES.Login_page.Login(Login_page.java:50)
-	at TESTS.Test_Jpet.Register_login(Test_Jpet.java:79)
+	at PAGES.Add_to_cart.add_product(Add_to_cart.java:14)
+	at TESTS.Test_Jpet.search_secenario(Test_Jpet.java:92)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,34 +115,18 @@ Session ID: 1bebbbb87dc1c0c175d867efdba4afaa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1001958076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1001958076'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div[2]/div/a[2]&quot;}
-  (Session info: chrome=80.0.3987.149)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1434367299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434367299'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@id=&apos;Catalog&apos;][1]//child::a[@href=&apos;/catalog/products/FI-SW-01&apos;][1]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-HGGEC2PE&apos;, ip: &apos;192.168.43.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\VDDEE~1.GIR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49644}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1bebbbb87dc1c0c175d867efdba4afaa
-*** Element info: {Using=xpath, value=/html/body/div[1]/div[2]/div/a[2]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PAGES.Login_page.sign(Login_page.java:22)
-	at PAGES.Login_page.Login(Login_page.java:50)
-	at TESTS.Test_Jpet.Register_login(Test_Jpet.java:79)
+	at PAGES.Add_to_cart.add_product(Add_to_cart.java:14)
+	at TESTS.Test_Jpet.search_secenario(Test_Jpet.java:92)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,8 +156,8 @@ Session ID: 1bebbbb87dc1c0c175d867efdba4afaa
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>60</td>
-<td>TESTS.Test_Jpet@6b26e945</td></tr>
+<td>14</td>
+<td>TESTS.Test_Jpet@63a65a25</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -199,10 +167,15 @@ Session ID: 1bebbbb87dc1c0c175d867efdba4afaa
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TESTS.Test_Jpet.search_secenario()'><b>search_secenario</b><br>Test class: TESTS.Test_Jpet</td>
+<td title='TESTS.Test_Jpet.Register_login()'><b>Register_login</b><br>Test class: TESTS.Test_Jpet<br>Parameters: giribabvelkurya, babuyadav, babuyadav, giribabu, yadav, giribabuvekyadaya@gmail.com, "7894563214", kondepalli, nellepalli, chittoor, andhra pradesh, "517198", india, giri, babuyadav</td>
 <td></td>
-<td>6</td>
-<td>TESTS.Test_Jpet@6b26e945</td></tr>
+<td>12</td>
+<td>TESTS.Test_Jpet@63a65a25</td></tr>
+<tr>
+<td title='TESTS.Test_Jpet.adding_product()'><b>adding_product</b><br>Test class: TESTS.Test_Jpet</td>
+<td></td>
+<td>20</td>
+<td>TESTS.Test_Jpet@63a65a25</td></tr>
 </table><p>
 </body>
 </html>

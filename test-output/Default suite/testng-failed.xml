@@ -5,9 +5,9 @@
     <classes>
       <class name="TESTS.Test_Jpet">
         <methods>
-          <include name="Register_login" invocation-numbers="0"/>
-          <include name="bfc"/>
-          <include name="bfm"/>
+          <include name="beforemethod"/>
+          <include name="search_secenario"/>
+          <include name="beforeclass"/>
         </methods>
       </class> <!-- TESTS.Test_Jpet -->
     </classes>
