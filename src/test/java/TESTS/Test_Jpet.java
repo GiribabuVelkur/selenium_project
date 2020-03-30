@@ -20,16 +20,17 @@ import PAGES.Register_page;
 import PAGES.Screen_shot;
 import PAGES.Search_page;
 
-public class Test_Jpet extends Read_excel {
+public class Test_Jpet  {
 	WebDriver driver;
 	Utilities ult;
+	Read_excel read;
 
 	
-	Register_page Register;
+	Register_page Register;           
 	Login_page Login;
 	Search_page search;
 	Add_to_cart addcart;
-	Products_incart productincart;
+	Products_incart productincart;       
 	Screen_shot screenshot;
 	
 	
@@ -38,7 +39,8 @@ public class Test_Jpet extends Read_excel {
 	public void beforeclass() 
 	{
 		ult=new Utilities(driver);
-		get_data();
+		read=new Read_excel();
+		read.get_data();
 		
 		
 	}
@@ -92,7 +94,7 @@ public class Test_Jpet extends Read_excel {
 		  addcart.add_product(); 
 		  //calling screenshot function
 		  screenshot.Take_screenshot();
-		  driver.quit();
+		  driver.close();
 		  
 	  }
 		  //calling add cart function
@@ -114,7 +116,9 @@ public class Test_Jpet extends Read_excel {
   public String[][] Provide_data()
   {
 	  //reading a data from excel
-	  return testdata;
+	  read=new Read_excel();
+		return read.get_data();
+	 
   }
   
 }
